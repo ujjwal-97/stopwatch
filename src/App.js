@@ -30,7 +30,7 @@ function App() {
     setIsPaused(false)
     setTimer(0)
   }
-  const formatTime = () =>{9
+  const formatTime = () =>{
     const getSeconds=`0${(timer %60)}`.slice(-2)
     const minutes=`${Math.floor(timer / 60)}`
     const getMinutes=`0${minutes % 60}`.slice(-2)
@@ -40,7 +40,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="app">
       <h2>StopWatch with REACT</h2>
       <div className="stopwatch-card">
         <p>{formatTime()}</p>
